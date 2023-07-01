@@ -1,0 +1,29 @@
+{
+  "name": "crud-vexur-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusMartinsDev/crud-vexur-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusMartinsDev/crud-vexur-back/issues"
+  },
+  "homepage": "https://github.com/viniciusMartinsDev/crud-vexur-back#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^1.14.9"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
