@@ -21,6 +21,7 @@
   "homepage": "https://github.com/viniciusMartinsDev/crud-vexur-back#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "neo4j-driver": "^5.10.0",
     "nodemon": "^1.14.9"
   },
   "devDependencies": {
