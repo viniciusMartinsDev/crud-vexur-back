@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const personRoute = require("./routes/PersonRoutes");
+const personRoute = require("./routes/PeopleRoutes");
 
 app.use(cors());
 app.use(express.json());
