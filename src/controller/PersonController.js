@@ -20,7 +20,7 @@ module.exports = {
       const person = req.body;
       const createdPerson = await PerosnService.create(person);
 
-      res.status(200).send(createdPerson);
+      res.status(201).send(createdPerson);
     } catch (error) {
       res.status(400).send({ message: error.message });
     }
@@ -31,7 +31,7 @@ module.exports = {
       const person = req.body;
       const { id } = req.params;
       const personData = {
-        id,
+        idPerson: id,
         ...person,
       };
       const updatedPerson = await PerosnService.update(personData);

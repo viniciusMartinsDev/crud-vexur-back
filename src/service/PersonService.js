@@ -4,13 +4,19 @@ module.exports = {
     return await PersonRepository.index();
   },
   async create(params) {
-    return await PersonRepository.create(params);
+    const formatedParams = {
+      idCompany: Number(params.idCompany) || null,
+      name: params.name,
+      birth: params.birth,
+    };
+    return await PersonRepository.create(formatedParams);
   },
   async update(params) {
     const formatedParams = {
-      id: Number(params.id),
+      idPerson: Number(params.idPerson),
       name: params.name || null,
       birth: params.birth || null,
+      idCompany: Number(params.idCompany) || null,
     };
 
     return await PersonRepository.update(formatedParams);
